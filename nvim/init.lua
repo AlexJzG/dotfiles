@@ -1,9 +1,7 @@
 require("config.keys.keymaps") -- Basic Keymaps
-require("config.keys.cpp")
 require("config.options")
 require("config.lazy")
 require("config")
--- require("snippets")
 
 -- Load Snippets
 require("luasnip.loaders.from_snipmate").lazy_load({paths = "./lua/snippets"})
