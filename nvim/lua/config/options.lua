@@ -16,8 +16,8 @@ vim.opt.scrolloff = 10
 vim.opt.shell = "zsh"
 vim.opt.smarttab = true
 vim.opt.breakindent = true
-vim.opt.shiftwidth = 4
-vim.opt.tabstop = 4
+vim.opt.shiftwidth = 2
+vim.opt.tabstop = 2
 vim.opt.termguicolors = true
 vim.opt.ruler = true
 vim.cmd[[ filetype plugin on ]]

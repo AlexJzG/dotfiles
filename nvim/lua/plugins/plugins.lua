@@ -6,21 +6,8 @@ return {
     { 'tpope/vim-surround' },
     { 'neovim/nvim-lspconfig' },
     { 'numToStr/Comment.nvim', },
-    { "CRAG666/code_runner.nvim", config = true },
     { 'norcalli/nvim-colorizer.lua' },
-    { "ellisonleao/glow.nvim", config = true, cmd = "Glow" },
     { "lewis6991/gitsigns.nvim" },
-    { 
-        "OXY2DEV/helpview.nvim",
-        lazy = false, -- Recommended
-    },
-    {
-        "lervag/vimtex",
-        lazy = false,
-        init = function()
-            vim.g.vimtex_view_method = "zathura"
-        end
-    },
     { 
         'mfussenegger/nvim-lint',
         event = {
