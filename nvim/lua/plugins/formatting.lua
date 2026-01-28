@@ -18,8 +18,11 @@ return {
             -- Define your formatters
             formatters_by_ft = {
                 lua = { "stylua" },
-                -- python = { "isort", "black" },
-                -- javascript = { { "prettierd", "prettier" } },
+                python = { "isort", "black" },
+                javascript = { "prettierd", "prettier", stop_after_first = true },
+                typescript = { "prettierd", "prettier", stop_after_first = true },
+                javascriptreact = { "prettierd", "prettier", stop_after_first = true },
+                typescriptreact = { "prettierd", "prettier", stop_after_first = true },
             },
             -- Set up format-on-save
             format_on_save = { timeout_ms = 500, lsp_fallback = true },

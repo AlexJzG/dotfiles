@@ -12,4 +12,9 @@ return {
             })
         end,
     },
+    {
+        "windwp/nvim-ts-autotag",
+        event = "InsertEnter",
+        config = true,
+    },
 }
