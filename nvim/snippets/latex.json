@@ -1,0 +1,62 @@
+{
+  "Begin Environment": {
+    "prefix": "beg",
+    "body": [
+      "\\begin{${1:enumerate}}",
+      "\t$0",
+      "\\end{${1:enumerate}}"
+    ],
+    "description": "Begin/End environment"
+  },
+  "Inline Math": {
+    "prefix": "mk",
+    "body": [
+      "\\$ $1 \\$"
+    ],
+    "description": "Inline math"
+  },
+  "Display Math": {
+    "prefix": "dm",
+    "body": [
+      " R[",
+      "\t$1",
+      " R] $0"
+    ],
+    "description": "Display math"
+  },
+  "Item": {
+    "prefix": "it",
+    "body": [
+      "\\item $0"
+    ],
+    "description": "Item"
+  },
+  "Figure": {
+    "prefix": "fig",
+    "body": [
+      "\\begin{figure}[${1:htpb}]",
+      "\t\\centering",
+      "\t\\includegraphics[width=${2:0.8}\\textwidth]{${3:name}}",
+      "\t\\caption{${4:caption}}",
+      "\t\\label{fig:${5:label}}",
+      "\\end{figure}$0"
+    ],
+    "description": "Figure environment"
+  },
+  "Fraction": {
+    "prefix": "ff",
+    "body": [
+      "\\frac{${1:num}}{${2:den}}$0"
+    ],
+    "description": "Fraction"
+  },
+  "Equation": {
+    "prefix": "eq",
+    "body": [
+      "\\begin{equation}",
+      "\t$1",
+      "\\end{equation}$0"
+    ],
+    "description": "Equation environment"
+  }
+}
