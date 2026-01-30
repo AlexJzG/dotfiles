@@ -22,9 +22,9 @@ opt.relativenumber = true
 
 -- write backup of the file before overwriting
 
-  -- (backup removed after success in writing the file)
+-- (backup removed after success in writing the file)
 opt.writebackup = true
-  -- (persistent backup to have as a recovery file)
+-- (persistent backup to have as a recovery file)
 opt.backup = true
 
 -- list of directories for the backup file
