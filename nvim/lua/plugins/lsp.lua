@@ -59,6 +59,12 @@ return {
           )
           map("K", vim.lsp.buf.hover, "Hover Documentation")
           map("gD", vim.lsp.buf.declaration, "Go to Declaration")
+
+          -- Diagnostics
+          map("[d", vim.diagnostic.goto_prev, "Go to previous [D]iagnostic")
+          map("]d", vim.diagnostic.goto_next, "Go to next [D]iagnostic")
+          map("<leader>e", vim.diagnostic.open_float, "Show diagnostic [E]rror messages")
+          map("<leader>q", vim.diagnostic.setloclist, "Open diagnostic [Q]uickfix list")
         end,
       })
     end,
