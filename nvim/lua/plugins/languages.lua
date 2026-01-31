@@ -30,4 +30,8 @@ return {
     event = "InsertEnter",
     config = true,
   },
+  {
+    "numToStr/Comment.nvim",
+    opts = {},
+  },
 }
