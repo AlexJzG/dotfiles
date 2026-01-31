@@ -26,6 +26,8 @@ return {
         javascriptreact = { "prettierd", "prettier", stop_after_first = true },
         typescriptreact = { "prettierd", "prettier", stop_after_first = true },
         tex = { "latexindent" },
+        make = { "bake" },
+        gitcommit = { "gitlint" },
       },
       -- Set up format-after-save
       format_after_save = function(bufnr)
