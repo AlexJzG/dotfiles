@@ -31,31 +31,6 @@ return {
         make = { "bake" },
         gitcommit = { "gitlint" },
       },
-      -- Set up format-after-save
-      format_after_save = function(bufnr)
-        if vim.g.disable_autoformat or vim.b[bufnr].disable_autoformat then
-          return
-        end
-
-        local opts = { lsp_format = "fallback" }
-
-        local cb = function(err, did_edit)
-          if err then
-            vim.notify("Formatting failed: " .. tostring(err), vim.log.levels.ERROR)
-            return
-          end
-          if not vim.api.nvim_buf_is_valid(bufnr) then
-            return
-          end
-
-          vim.api.nvim_buf_call(bufnr, function()
-            vim.cmd("silent! noautocmd retab")
-            vim.cmd("silent! noautocmd write")
-          end)
-        end
-
-        return opts, cb
-      end,
       -- Customize formatters
       formatters = {
         shfmt = {
